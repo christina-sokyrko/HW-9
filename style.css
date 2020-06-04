@@ -1,0 +1,431 @@
+html {
+  font-family: 'Lato'
+}
+div {
+}
+body {
+  width: 1440px;
+}
+.wrapper {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 720px) {
+  .wrapper {
+    width: 360px;
+  }
+}
+.box-1 {
+  max-width: 100%;
+  background-color: #F4F6F9;
+  display: flex;
+  flex-direction: row;
+}
+.box-1-left {
+width: 50%;
+display: flex;
+flex-direction: column;
+}
+@media (max-width: 720px) {
+  .box-1-left {
+    width: 100%;
+  }
+}
+.sports {
+  display: flex;
+  flex-direction: row;
+  margin-left: 163px;
+  margin-top: 30px;
+}
+@media (max-width: 720px){
+  .sports {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.ball-pic {
+  height:25px;
+}
+.sports-text {
+  font-size: 24px;
+  color: #5282F0;
+  margin-left: 5px;
+  margin-top: -1px;
+}
+.box-1-text-big {
+  font-size: 36px;
+  margin-left: 163px;
+  margin-top: 75px;
+}
+@media (max-width: 720px) {
+  .box-1-text-big {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.box-1-text-small {
+  font-size: 18px;
+  margin-left: 163px;
+
+}
+@media (max-width: 720px) {
+  .box-1-text-small {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.box-1-buttons {
+  margin-left: 163px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 720px) {
+  .box-1-buttons {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+button {
+  border: transparent;
+  background: transparent;
+}
+.googleplay-pic {
+  margin-left: 30px;
+}
+.box-1-right {
+width:50%;
+
+}
+@media (max-width: 720px) {
+  .box-1-right {
+    display: none;
+  }
+}
+.phones-pic {
+  height: 800px;
+  margin-top: -170px;
+
+}
+
+.box-2 {
+  max-width: 100%;
+  height: 592px;
+  display: flex;
+  flex-direction: row;
+
+}
+@media (max-width: 720px) {
+  .box-2 {
+    flex-direction: column;
+  }
+}
+.box-2-left {
+background-image: url(images/main-1/main-1-background-2.png);
+width: 50%;
+display: flex;
+align-items: baseline;
+
+
+}
+@media (max-width: 720px) {
+  .box-2-left {
+    width: 100%;
+    order: 2;
+  }
+}
+.layer {
+  position: relative;
+}
+.arsenal-chelsea {
+  width: 360px;
+  height: 218px;
+  background-color: white;
+  margin-top: 90px;
+  margin-left: 170px;
+
+  z-index: 5;
+}
+@media (max-width: 720px) {
+  .arsenal-chelsea {
+    margin-left: 0;
+    height: 149px;
+    width: 247px;
+    position: relative;
+  }
+}
+.a-ch-content {
+  display: flex;
+  justify-content: space-around;
+}
+.graytext-1 {
+  font-size: 16px;
+  color: #4F4F4F;
+}
+.eightteen {
+  font-size: 18px;
+}
+.sixteen {
+  font-size: 16px;
+}
+.a-ch {
+  height: 100px;
+  margin-top: 40px;
+}
+.gray-back-1 {
+
+}
+.video {
+  background-image: url(images/main-1/Rectangle.png);
+  width: 360px;
+  height: 218px;
+  margin-top: -30px;
+  margin-left: 270px;
+
+  z-index: 0;
+}
+@media (max-width: 720px){
+  .video {
+    margin-left: 20px;
+    height: 149px;
+    width: 247px;
+    position: relative;
+
+  }
+}
+.gray-back {
+  margin-top: 170px;
+}
+.box-2-right {
+  width: 50%;
+}
+@media (max-width: 720px) {
+  .box-2-right {
+    width: 100%;
+  }
+}
+.box-2-right-text {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bluetext-1 {
+  font-size: 16px;
+  color: #00ADEE;
+}
+.thirty-seven {
+  font-size: 37px;
+}
+.sixteen-2 {
+  font-size: 16px;
+  color: #4F4F4F;
+}
+.bluetext-2 {
+  font-size: 16px;
+  color: #00ADEE;
+  text-decoration: none;
+}
+.box-3 {
+  max-width: 100%;
+  height: 716px;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 720px) {
+  .box-3 {
+    flex-direction: column;
+  }
+}
+.box-3-left {
+  width: 50%;
+}
+@media (max-width: 720px) {
+  .box-3-left {
+    width: 100%;
+  }
+}
+.box-3-left-text {
+  width: 80%;
+  margin-left: 163px;
+  margin-top: 100px;
+
+}
+.box-3-right {
+  width: 50%;
+}
+@media (max-width: 720px) {
+  .box-3-right {
+    width: 100%; }
+  }
+  @media (max-width: 720px) {
+  .mobile-pic {
+    height:315px;
+    width: 315px;
+  }
+}
+
+.box-4 {
+  max-width: 100%;
+  background-image: url(images/main-3/background.png);
+  display: flex;
+  flex-direction: column;
+  }
+  @media (max-width: 720px) {
+    .box-4 {
+      background: #FAFAFA;
+
+    }
+  }
+.box-4-header {
+  font-size: 28px;
+  color: white;
+  width: 508px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (max-width: 720px) {
+  .box-4-header {
+    color: #333333;
+    width: 320px;
+  }
+}
+.box-4-content {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+@media (max-width: 720px) {
+  .box-4-content {
+    display: flex;
+    flex-direction: column;
+    color: #4F4F4F;
+  }
+}
+.content-column {
+  padding: 30px;
+}
+.box-5 {
+  max-width: 100%;
+
+}
+.box-6 {
+  max-width: 100%;
+  background-color: #FAFAFA;
+  height: 278px;
+}
+.box-6-header {
+  font-size: 28px;
+  width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box-6-content {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 70px;
+}
+@media (max-width: 720px) {
+  .box-6-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+}
+.icon-icon {
+  height: 30px;
+}
+.box-7 {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+@media (max-width: 720px) {
+.box-7 {
+  flex-direction: column;
+}
+}
+.box-7-left {
+  width: 50%;
+}
+@media (max-width: 720px) {
+.box-7-left {
+  width:100%;
+  display: flex;
+  order: 2;
+}
+}
+.box-7-right {
+  width: 50%;
+}
+@media (max-width: 720px) {
+.box-7-right {
+  width: 100%;
+
+}
+}
+.box-7-right-content {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.box-7-buttons {
+  display: flex;
+  flex-direction: row;
+}
+.googleplay-2-pic {
+  margin-left: 30px;
+}
+.box-8 {
+  max-width: 100%;
+  min-height: 127px;
+  background-color: #00ADEE;
+  display: flex;
+  justify-content: space-around;
+}
+@media (max-width: 720px) {
+  .box-8 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+.sports-2 {
+  width: 90px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+}
+.ballpic-2 {
+  height:25px;
+  margin-right: 5px;
+}
+.sports-2-text {
+  font-size: 24px;
+  color: white;
+  margin-left: 5px;
+  margin-top: -1px;
+}
+.properties {
+  width: 420px;
+  font-size: 16px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+
+}
+@media (max-width: 720px)  {
+  .properties {
+    width: 320px;
+  }
+}
+.media {
+  width: 100px;
+  display: flex;
+  justify-content: space-around;
+}
