@@ -5,7 +5,9 @@ div {
 }
 body {
   width: 1440px;
+  margin: 0 auto;
 }
+
 .wrapper {
   width: 1440px;
   display: flex;
@@ -14,13 +16,18 @@ body {
 @media (max-width: 720px) {
   .wrapper {
     width: 360px;
-  }
+}
 }
 .box-1 {
   max-width: 100%;
   background-color: #F4F6F9;
   display: flex;
   flex-direction: row;
+}
+@media (max-width: 720px) {
+  .box-1 {
+    margin-bottom: 50px;
+  }
 }
 .box-1-left {
 width: 50%;
@@ -30,6 +37,7 @@ flex-direction: column;
 @media (max-width: 720px) {
   .box-1-left {
     width: 100%;
+    padding: 20px;
   }
 }
 .sports {
@@ -85,14 +93,35 @@ flex-direction: column;
   .box-1-buttons {
     margin-left: auto;
     margin-right: auto;
+
   }
 }
 button {
   border: transparent;
   background: transparent;
+
+}
+.applestore-pic:hover {
+  height: 60px;
+}
+@media (max-width: 720px) {
+  .applestore-pic {
+    height: 30px;
+  }
 }
 .googleplay-pic {
   margin-left: 30px;
+}
+.googleplay-pic:hover {
+  height: 60px;
+}
+@media (max-width: 720px) {
+  .googleplay-pic {
+    height: 30px;
+  }
+  .googleplay-pic:hover {
+    height: 45px;
+  }
 }
 .box-1-right {
 width:50%;
@@ -119,6 +148,7 @@ width:50%;
 @media (max-width: 720px) {
   .box-2 {
     flex-direction: column;
+    margin-bottom: 100px;
   }
 }
 .box-2-left {
@@ -127,12 +157,14 @@ width: 50%;
 display: flex;
 align-items: baseline;
 
-
 }
 @media (max-width: 720px) {
   .box-2-left {
+    background-image: url(images/main-1/main-1-background-2.png);
     width: 100%;
+    background-size: cover;
     order: 2;
+    padding: 30px;
   }
 }
 .layer {
@@ -143,16 +175,17 @@ align-items: baseline;
   height: 218px;
   background-color: white;
   margin-top: 90px;
+  margin-bottom: -30px;
   margin-left: 170px;
-
   z-index: 5;
+  position: absolute;
 }
 @media (max-width: 720px) {
   .arsenal-chelsea {
     margin-left: 0;
-    height: 149px;
-    width: 247px;
-    position: relative;
+    width: 300px;
+    height: 160px;
+    position: absolute;
   }
 }
 .a-ch-content {
@@ -163,46 +196,127 @@ align-items: baseline;
   font-size: 16px;
   color: #4F4F4F;
 }
+
 .eightteen {
   font-size: 18px;
 }
+
 .sixteen {
   font-size: 16px;
 }
+
 .a-ch {
   height: 100px;
   margin-top: 40px;
 }
+
 .gray-back-1 {
+display: flex;
+justify-content: space-around;
+background-color: #EEEEEE;
+padding-top: 25px;
+height: 50px;
+z-index: 5;
+}
+
+
+.notif-text {
+  font-size: 18px;
+  color: #4F4F4F;
+  margin: 10px;
+  margin-top: -3px;
 
 }
+
+.slider-round {
+  margin: 10px;
+
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  border: transparent solid 1px;
+  border-radius: 100px;
+
+}
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+    border-radius: 100px;
+}
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 0px;
+  bottom: 0px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border: transparent solid 1px;
+  border-radius: 100px;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
 .video {
-  background-image: url(images/main-1/Rectangle.png);
+  background-image: url(images/main-1/football-video.svg);
   width: 360px;
   height: 218px;
-  margin-top: -30px;
   margin-left: 270px;
-
+  margin-top: 280px;
   z-index: 0;
+  position: absolute;
 }
 @media (max-width: 720px){
   .video {
     margin-left: 20px;
-    height: 149px;
-    width: 247px;
-    position: relative;
-
+    width: 300px;
+    height: 160px;
+    position: absolute;
   }
 }
 .gray-back {
   margin-top: 170px;
 }
-.box-2-right {
-  width: 50%;
-}
+
 @media (max-width: 720px) {
   .box-2-right {
     width: 100%;
+    margin-bottom: 50px;
   }
 }
 .box-2-right-text {
@@ -235,6 +349,9 @@ align-items: baseline;
 @media (max-width: 720px) {
   .box-3 {
     flex-direction: column;
+    margin-top: 600px;
+    margin-bottom: 400px;
+
   }
 }
 .box-3-left {
@@ -243,6 +360,7 @@ align-items: baseline;
 @media (max-width: 720px) {
   .box-3-left {
     width: 100%;
+    margin-left: -100px;
   }
 }
 .box-3-left-text {
@@ -253,16 +371,51 @@ align-items: baseline;
 }
 .box-3-right {
   width: 50%;
-}
+  padding: 40px;
+
+  }
 @media (max-width: 720px) {
   .box-3-right {
-    width: 100%; }
+    width: 100%;
   }
+}
   @media (max-width: 720px) {
   .mobile-pic {
-    height:315px;
-    width: 315px;
+    height:250px;
+}
+}
+.box-3-pics {
+  position: relative;
+  z-index: -1;
+}
+.circle-1 {
+position: absolute;
+margin-left: -600px;
+margin-top: 50px;
+}
+  @media (max-width: 720px) {
+  .circle-1  {
+    margin-left: -210px;
+    margin-top: 15px;
   }
+  .icon-bell {
+    height: 50px;
+  }
+  }
+
+.circle-2 {
+position: absolute;
+margin-left: -330px;
+margin-top: 530px;
+}
+@media (max-width: 720px) {
+.circle-2  {
+  margin-left: -130px;
+  margin-top: 180px;
+}
+.icon-phone {
+  height: 50px;
+}
 }
 
 .box-4 {
@@ -274,7 +427,7 @@ align-items: baseline;
   @media (max-width: 720px) {
     .box-4 {
       background: #FAFAFA;
-
+      margin-bottom: 50px;
     }
   }
 .box-4-header {
@@ -300,6 +453,7 @@ align-items: baseline;
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 @media (max-width: 720px) {
   .box-4-content {
     display: flex;
@@ -307,17 +461,181 @@ align-items: baseline;
     color: #4F4F4F;
   }
 }
+.features-text {
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 720px) {
+  .features-text {
+    color: #4F4F4F;
+    text-decoration: none;
+  }
+}
 .content-column {
   padding: 30px;
 }
+
+@media (max-width: 720px) {
+  .box-4-icon svg #icon-1{
+    fill: #00ADEE;
+    }
+}
+@media (max-width: 720px) {
+  .box-4-icon svg #icon-2{
+    fill: #00ADEE;
+  }
+}
+@media (max-width: 720px) {
+  .box-4-icon svg #icon-3{
+    fill: #00ADEE;
+  }
+}
+@media (max-width: 720px) {
+  .box-4-icon svg #icon-4{
+    fill: #00ADEE;
+  }
+}
+@media (max-width: 720px) {
+  .box-4-icon svg #icon-5{
+    fill: #00ADEE;
+  }
+}
+@media (max-width: 720px) {
+  .box-4-icon svg #icon-6{
+    fill: #00ADEE;
+  }
+}
+@media (max-width: 720px) {
+  .box-4-icon svg #icon-7{
+    fill: #00ADEE;
+  }
+}
+@media (max-width: 720px) {
+  .box-4-icon svg #icon-8{
+    fill: #00ADEE;
+  }
+}
+@media (max-width: 720px) {
+  .box-4-icon svg #icon-9{
+    fill: #00ADEE;
+  }
+}
+
+
 .box-5 {
   max-width: 100%;
+  margin-top: 50px;
+}
 
+.what-our-users-say {
+  font-size: 28px;
+  color: #333333;
+  text-align: center;
+  margin-bottom: 55px;
+}
+.users {
+  display: flex;
+  justify-content: space-around;
+}
+.arrow-button-left {
+  height: 50px;
+  width: 50px;
+  border: solid #00ADEE 2px;
+  border-radius: 100px;
+  margin-top: 30px;
+}
+.arrow-button-left:hover {
+  height: 70px;
+  width: 70px;
+}
+@media (max-width: 720px) {
+  .arrow-button-left {
+    display: none;
+  }
+}
+.arrow-button-right {
+  background-image: url(images/main-4/arrrow.svg);
+  height: 50px;
+  width: 50px;
+  border: solid #00ADEE 2px;
+  border-radius: 100px;
+  margin-top: 30px;
+}
+@media (max-width: 720px) {
+  .arrow-button-right {
+    height: 30px;
+    width: 30px;
+    margin-left: 20px;
+    margin-top: 60px;
+  }
+}
+#arrow-right {
+  transform: rotate(180deg);
+}
+.arrow-button-right:hover {
+  height: 70px;
+  width: 70px;
+}
+.user-say {
+  border: 1px solid #828282;
+  border-radius: 4px;
+  width: 340px;
+  padding: 10px;
+  color:#4F4F4F;
+  text-decoration: none;
+}
+@media (max-width: 720px) {
+  .user-say {
+    width: 280px;
+    padding: 10px;
+  }
+}
+@media (max-width: 720px) {
+  #user-say-2, #user-say-3 {
+    display: none;
+  }
+}
+.user-say:hover {
+  border: solid #00ADEE 3px;
+}
+.user-header {
+  display: flex;
+  flex-direction: row;
+}
+.user-face {
+  height: 30px;
+
+}
+.user-name {
+  font-weight: bold;
+  font-size: 16px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+.icon-twitter {
+  height: 15px;
+  margin-left: 140px;
+
+}
+.user-text {
+  width: 320px;
+
+}
+@media (max-width: 720px) {
+  .user-text {
+    width: 280px;
+  }
 }
 .box-6 {
   max-width: 100%;
   background-color: #FAFAFA;
   height: 278px;
+  margin-top: 50px;
+}
+@media (max-width: 720px) {
+  .box-6 {
+    margin-bottom: 50px;
+  }
 }
 .box-6-header {
   font-size: 28px;
@@ -335,10 +653,17 @@ align-items: baseline;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin-top: -20px;
+    padding: 20px;
   }
 }
 .icon-icon {
   height: 30px;
+}
+@media (max-width: 720px) {
+  .icon-icon {
+    margin: 10px;
+  }
 }
 .box-7 {
   max-width: 100%;
@@ -348,6 +673,7 @@ align-items: baseline;
 @media (max-width: 720px) {
 .box-7 {
   flex-direction: column;
+  margin-bottom: 50px;
 }
 }
 .box-7-left {
@@ -359,6 +685,12 @@ align-items: baseline;
   display: flex;
   order: 2;
 }
+@media (max-width: 720px) {
+.phones-2-pic {
+  height: 250px;
+  }
+}
+
 }
 .box-7-right {
   width: 50%;
@@ -366,6 +698,7 @@ align-items: baseline;
 @media (max-width: 720px) {
 .box-7-right {
   width: 100%;
+  padding: 20px;
 
 }
 }
@@ -373,6 +706,13 @@ align-items: baseline;
   width: 500px;
   margin-left: auto;
   margin-right: auto;
+}
+@media (max-width: 720px) {
+  .box-7-right-content {
+    width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+}
 }
 .box-7-buttons {
   display: flex;
@@ -392,6 +732,7 @@ align-items: baseline;
   .box-8 {
     display: flex;
     flex-direction: column;
+    padding: 20px;
   }
 }
 .sports-2 {
@@ -417,7 +758,10 @@ align-items: baseline;
   display: flex;
   justify-content: space-around;
   margin-top: 50px;
-
+}
+.prop {
+  color: white;
+  text-decoration: none;
 }
 @media (max-width: 720px)  {
   .properties {
